@@ -12,7 +12,7 @@ const badFiles = [];
 
 fs.readdirSync(filePath).forEach(file => {
 
-    if(!file.match(/(^[A-Z][a-s]+_[A-Z][a-s]+_[A-Z0-9]+_[A-Z\-]+.([a-z0-9]{3,4}))/)) {
+    if(!file.match(/(^[A-Z][a-z]+_[A-Z][a-z]+_[A-Z0-9]+_[A-Z\-]+.([a-z0-9]{3,4}))/)) {
         badFiles.push(file);
     } else {
         goodFiles.push(file);
